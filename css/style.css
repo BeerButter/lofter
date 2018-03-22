@@ -1,0 +1,717 @@
+/* CSS Document */
+html, body, div, span, object, iframe,h1, h2, 
+h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, 
+em, img, ins,kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, 
+ol, ul, li,fieldset, form, label, legend,table, caption, tbody, 
+tfoot,thead,tr, th, td,article, aside, canvas, details, figcaption, 
+figure, footer, header, hgroup, menu, nav, section, summary,time, mark, 
+audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    outline-style:none;/*FF*/ 
+    cursor: default;
+}
+i,em{
+	font-style: normal;
+}
+body {
+    line-height:1;
+    "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
+}
+div{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    color: #444;
+    font-family: "微软雅黑";
+}
+a:hover,a:focus{
+    text-decoration:none;
+    bblr:expression(this.onFocus=this.blur());/*IE*/
+    outline-style:none;/*FF*/ 
+    }
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+ 
+input, select {
+    vertical-align:middle;
+}
+
+/*css为clearfix，清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
+}
+
+
+
+
+
+
+/*————————————————————————————正文——————————————————————————————————*/
+
+
+
+
+/*头部部分*/
+header{
+	width: 100%;
+	height: 800px;
+	background-color:#ccc;
+	position: relative;
+}
+
+.banner{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.banner-1,.banner-2,.banner-3{
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	background-position: center center; 
+}
+.banner-1{
+	background-image: url(../img/banner01.jpg);
+	
+}
+.banner-2{
+	background-image: url(../img/banner02.jpg);
+	display: none;
+}
+.banner-3{
+	background-image: url(../img/banner03.jpg);
+	display: none;
+}
+
+
+
+/*登陆框界面*/
+.login{
+	width: 100%;
+	margin: 0 auto;
+	z-index: 10;
+/*	background-color: #eee;*/
+	position: absolute;
+	top:115px;
+	left: 0;
+}
+.login img.logo{
+	margin: 0 auto 60px;
+	display: block;
+}
+.login-bar{
+	width: 583px;
+/*	background-color: #eee;*/
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+
+
+.login-tab{
+	height: 56px;
+	width: 100%;
+/*	background-color: #eee;*/
+}
+
+/*登录框导航*/
+.login-tab a{
+	width: 33.1%;
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+	line-height: 56px;
+	font-size: 18px;
+	background-color: rgba(17,17,17,0.5);
+	color: rgba(255,255,255,0.5);
+	letter-spacing: 4px;
+	border-right: 1px solid rgba(17,17,17,0.3);
+	cursor: pointer;
+}
+.login .login-tab a:last-child{
+	letter-spacing: 0px;
+}
+.login .login-tab a:hover{
+	color: #fff;
+}
+.login .login-tab a.active{
+	color: #444;
+	background-color: #fff;
+	border-right: #fff 1px solid;
+}
+/*登陆框主体*/
+.login-bar .div-contain .zhuce,.denglu,.download{
+	width: 100%;
+	background-color: #fff;
+	padding: 30px;
+	position: absolute;
+	top: 56px;
+	left: 0;
+}
+.login-bar .div-contain .zhuce{
+	height: 260px;
+}
+.login-bar .div-contain .denglu{
+	display: none;
+}
+.login-bar .div-contain .download{
+	display: none;
+	font-family: "微软雅黑";
+}
+.div-contain .item-left{
+	width: 306px;
+	float: left;
+	font-family: "微软雅黑";
+}
+.div-contain .item-right{
+	width: 194px;
+	float: right;
+	position: relative;
+	font-family: "微软雅黑";
+}
+
+/*左侧栏*/
+.item-left input{
+	border:#d7d7d7 1px solid;
+	width: 300px;
+	height: 40px;
+	line-height: 22px;
+	color:#444 ;
+	padding: 8px 16px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	font-family: "微软雅黑";
+	font-weight: 400;
+}
+.item-left input:first-child{
+	border-bottom: none;
+}
+.item-left .slider{
+	color: #a8a8a8;
+	font-size: 12px;
+	overflow: hidden;
+	border-radius: 13px;
+	border: 1px solid #cbcbcb;
+	width: 267px;
+	height: 28px;
+	line-height: 28px;
+	text-indent: 25px;
+	background-color: #F9F9F9;
+	margin-top: 14px;
+}
+.item-left .slider img{
+	float: left;
+	height: 100%;
+	cursor: pointer;
+}
+.item-left p.cue{
+	background: url(../img/icon1.png) left center / 16px no-repeat;
+	font-size: 12px;
+	color: #000;
+	margin-top: 10px;
+	text-indent: 20px;
+	height: 25px;
+	line-height: 25px;
+	font-family: "微软雅黑";
+	vertical-align: middle;
+}
+.item-left .cue a{
+	color: #4aafe9;
+}
+.item-left .btn{
+	width: 300px;
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	cursor: pointer;
+	text-align: center;
+	background-color: #8db800;
+	font-family: "微软雅黑";
+	letter-spacing: 10px;
+	font-size: 18px;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+.item-left .btn:hover{
+	background-color: #aed505;
+}
+
+.item-left p.ot{
+	font-size: 12px;
+	margin-top: 10px;
+	color: #666;
+	height: 20px;
+	line-height: 20px;
+}
+.item-left p.ot img{
+	vertical-align: middle;
+	margin-right: 5px;
+	display: inline-block;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+.item-left p.ot .ot-r{
+	float: right;
+	margin-right: 10px;
+}
+.item-left p.ot .ot-r span{
+	cursor: pointer;
+}
+p.ot .ot-r i{
+	margin: 0 10px;
+	color: #666;
+}
+
+/*右侧栏*/
+.item-right .or{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	color: #aaa;
+	font-size: 12px;
+	display: inline-block;
+	padding: 20px 5px;
+	margin-top: -26px;
+	margin-left: -11px;
+	background-color: #fff;
+}
+.item-right .others{
+
+	border-left: 1px solid #eee;
+	padding-left: 30px;
+}
+.item-right .others div{
+	height: 40px;
+	line-height: 40px;
+	width: 162px;
+	color: #fff;
+	margin-bottom: 10px;
+	border-radius: 2px;
+	cursor: pointer;
+	position: relative;
+}
+.item-right .others div .iconfont{
+	color: #fff;
+	margin-left: 10px;
+	font-size: 25px;
+}
+.item-right .others div:nth-child(1){
+		background-color: #75a2d6;
+}
+.item-right .others div:nth-child(1):hover{
+		background-color: #81b3ef;
+}
+.item-right .others div:nth-child(2){
+		background-color: #e65e42;
+}
+.item-right .others div:nth-child(2):hover{
+		background-color: #ff734a;
+}
+.item-right .others div:nth-child(3){
+		background-color: #308eb5;
+}
+.item-right .others div:nth-child(3):hover{
+		background-color: #00b7d6;
+}
+.item-right .others div:nth-child(4){
+		background-color: #7fa900;
+		margin-bottom: 0;
+}
+.item-right .others div:nth-child(4):hover{
+		background-color: #aed505;
+}
+.item-right .others div:before{
+	content: '';
+	width: 1px;
+	height: 40px;
+	background-color: rgba(0,0,0,0.1);
+	position: absolute;
+	left: 45px;
+	top: 0;
+}
+.item-right .others span{
+	display: inline-block;
+	margin-bottom: 10px;
+	line-height: 20px;
+	font-size: 14px;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+/*login-bar——下载页面*/
+.download .version{
+	display: inline-block;
+	width: 315px;
+	float: left;
+}
+.download .version li{
+	font-size: 13px;
+	display: block;
+	color: #888;
+	margin:0 50px 20px 40px;
+}
+.download .version li span{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: top;
+}
+
+.download .version li a{
+	width: 135px;
+	display: inline-block;
+	height: 40px;
+	float: right;
+	background: url(../img/app.jpg) 0 0  no-repeat;
+}
+.download .version li .android{
+	background: url(../img/app.jpg) 0 -40px  no-repeat;
+}
+.download .version .code{
+	float: right;
+}
+
+
+/*右下角翻页*/
+header .page{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+header .page i{
+	cursor: pointer;
+	color: #ddd;
+	font-size: 25px;
+}
+header .page i:hover{
+	color:#fff;
+}
+
+
+/*main 主体部分*/
+main{
+	width: 100%;
+
+/*	background-color: #eee;*/
+	font-family: "微软雅黑";
+	color: #444;
+
+}
+main h2{
+	padding: 72px 0 16px;
+	font-size: 46px;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+main p{
+	padding-bottom: 69px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 36px;
+}
+
+main a:hover{
+	color: #5a8dcd;
+}
+main img{
+	display: block;
+	margin: 0 auto 77px;
+}
+main .main-item{
+	width: 960px;
+	height: 290px;
+	margin: 0 auto;
+/*	background-color: #ccc;*/
+}
+.main-item div{
+	width: 400px;
+	height: 225px;
+	margin: 0 38px 64px;
+	display: inline-block;
+	float: left;
+}
+.main-item div i{
+	width: 91px;
+	height: 90px;
+	display: block;
+	margin: 0 auto;
+	background: url(../img/icon.png) -114px 0 no-repeat;
+}
+
+.main-item div h3{
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 36px;
+	margin: 25px 0 18px;
+	text-align: center;
+}
+.main-item div p{
+	font-size: 14px;
+	-ms-text-align-last: right;
+	text-align: left;
+	line-height: 28px;
+}
+
+main .gray{
+	background-color: #f7f7f7;
+}
+main .horizon{
+	height: 430px;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 75px;
+	
+}
+.horizon .img-line{
+	width: 200%;
+	float: left;
+	overflow: hidden;
+	margin-left: -195px;
+
+}
+.horizon img{
+	height: 430px;
+	display: inline-block;
+	margin: 0 15px;
+}
+
+main .gray{
+	text-align: center;
+
+}
+main .gray p{
+	/*padding-bottom:  20px;	*/
+}
+main .gray a{
+	display: inline-block;
+	color: #7594b3;
+	padding-bottom: 70px;
+	margin-top: -60px;
+}
+main .gray .quanzi{
+	width: 70%;
+}
+.main-bottom .others{
+	margin: 50px auto 80px;
+	width: 840px;
+	overflow: hidden;
+}
+
+.main-bottom .others div{
+	height: 50px;
+	line-height: 50px;
+	width: 200px;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	position: relative;
+	float: left;
+	margin: 0 5px;
+}
+.main-bottom .others span{
+	margin-left: 30px;
+	display: inline-block;
+	line-height: 50px;
+	cursor: pointer;
+	vertical-align: top;
+}
+.main-bottom .others div .iconfont{
+	color: #fff;
+	margin-left: 10px;
+	cursor: pointer;
+	font-size: 25px;
+}
+.main-bottom .others div:nth-child(1){
+		background-color: #75a2d6;
+}
+.main-bottom .others div:nth-child(1):hover{
+		background-color: #81b3ef;
+}
+.main-bottom .others div:nth-child(2){
+		background-color: #e65e42;
+}
+.main-bottom .others div:nth-child(2):hover{
+		background-color: #ff734a;
+}
+.main-bottom .others div:nth-child(3){
+		background-color: #308eb5;
+}
+.main-bottom .others div:nth-child(3):hover{
+		background-color: #00b7d6;
+}
+.main-bottom .others div:nth-child(4){
+		background-color: #7fa900;
+		margin-bottom: 0;
+}
+.main-bottom .others div:nth-child(4):hover{
+		background-color: #aed505;
+}
+.main-bottom .others div:before{
+	content: '';
+	width: 1px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.1);
+	position: absolute;
+	left: 45px;
+	top: 0;
+}
+
+/*底部FOOTER*/
+
+footer div{
+	padding: 30px 0;
+	width: 100%;
+	font-size: 12px;
+	color: #74808b;
+	background-color: #f7f7f7;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+
+footer div a{
+	color: #74808b;
+	font-size: 12px;
+	margin: 0 5px;
+}
+footer p{
+	margin-top: 17px;
+}
+
+/*浮动Guide*/
+/*.shadow{
+	position:fixed;
+	width: 100%;
+	height: 32px;
+	bottom: 105px;
+	background: url(../img/shadow.png) center top no-repeat;
+	
+}*/
+.glide{
+	font-family: "微软雅黑";
+	position: fixed;
+	bottom: -210px;
+	background-color: #fff;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0 -3px 10px #ccc;
+	opacity: 0;
+}
+.glide .main-bottom{
+	width: 100%;
+	height: 100%;
+}
+
+.glide .others{
+	margin: 30px auto 25px;
+	width: 688px;
+}
+
+.glide .main-bottom .others div{
+
+	height: 40px;
+	line-height: 40px;
+	width: 162px;
+	color: #fff;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+.glide .main-bottom .others div:before{
+	height: 40px;
+}
+
+.glide .main-bottom .others span{
+	line-height: 40px;
+	margin-left: 20px;
+}
+
+/*向上滑动动画*/
+.slide-up{
+	animation: runn 1s linear forwards;
+}
+.slide-down{
+	animation: back 1s linear forwards;
+}
+@keyframes runn{
+	from{bottom: -210px;opacity: 0;}
+	to{bottom: 0;opacity: 1;}
+}
+@keyframes back{
+	from{bottom: 0px;opacity: 1;}
+	to{bottom: -210px;opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*图标背景*/
+
+.main-item div i.icon1{
+	background: url(../img/icon.png) -114px 0 no-repeat;
+	
+}
+.main-item div i.icon2{
+	background: url(../img/icon.png) -234px 0 no-repeat;
+	
+}
+.main-item div i.icon3{
+	background: url(../img/icon.png) -455px 0 no-repeat;
+	
+}
+.main-item div i.icon4{
+	background: url(../img/icon.png) -565px 0 no-repeat;
+	
+}
+.main-item div i.icon5{
+	background: url(../img/icon.png) -675px 0 no-repeat;
+	
+}
+.main-item div i.icon6{
+	background: url(../img/icon.png) -785px 0 no-repeat;
+	
+}
